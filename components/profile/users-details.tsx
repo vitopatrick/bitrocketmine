@@ -51,7 +51,7 @@ const UsersDetails = ({
             {loading && <SkeletonText height={5} width={200} />}
             {!loading && (
               <h1 className="font-medium text-base md:text-base text-paper">
-                {user.verfied ? "Verified" : "Not Verified"}
+                {user.verified ? "Verified" : "Not Verified"}
               </h1>
             )}
           </div>
@@ -69,7 +69,7 @@ const UsersDetails = ({
             {loading && <SkeletonText height={5} width={200} />}
             {!loading && (
               <h1 className="font-medium text-base md:text-base">
-                {user.verfied
+                {user.verified
                   ? "unlimited"
                   : "No withdrawal please verify account"}
               </h1>

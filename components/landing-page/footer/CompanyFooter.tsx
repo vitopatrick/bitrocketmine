@@ -57,7 +57,7 @@ const CompanyFooter = () => {
             Margin trading involves a high level of risk, and may not be
             suitable for all investors. You should carefully consider your
             objectives, financial situation, needs and level of experience
-            before entering into any margined transactions with Eightcap, and
+            before entering into any margined transactions with Roketmine, and
             seek independent advice if necessary. Forex and Derivatives (margin
             trading) are highly leveraged products which mean both gains and
             losses are magnified. You should only trade in these products if you
@@ -72,14 +72,14 @@ const CompanyFooter = () => {
             take the high risk of losing your money.
           </div>
           <div>
-            Eightcap Global Limited regulated by The Securities Commission of
+            Roketmine Global Limited regulated by The Securities Commission of
             The Bahamas (SCB) (SIA-F220).
           </div>
           <div>
             The information on this website is not targeted at the general
             public of any specific country and is not intended for distribution
             to residents in any jurisdiction where that distribution would be
-            unlawful or contravene regulatory requirements. Eightcap makes
+            unlawful or contravene regulatory requirements. Roketmine makes
             reasonable efforts to provide accurate translations of the website
             in other languages for your convenience. Where content is missing,
             inaccurate or incomplete, the English version prevails.

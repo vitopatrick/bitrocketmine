@@ -21,7 +21,7 @@ const Automate = () => {
             English. Enter plain language instructions and Capitalise.ai will
             execute your trades. No coding experience is required. Free monthly
             webinars are also available. Connect MetaTrader with Capitalise.ai.
-            Free of charge with your Eightcap account.
+            Free of charge with your Roket mine account.
           </p>
           <div>
             <Link
