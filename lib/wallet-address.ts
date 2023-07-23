@@ -10,7 +10,7 @@ export const addresses = [
   {
     id: 3,
     sym: "usdt",
-    name: "Tether ",
+    name: "USDT Trc20",
     address: "TRbWVyZA1e9nftfvsNSfNtcBVa1eiwmb47",
     network: "usdt",
     // img: "/usdt.jpeg",

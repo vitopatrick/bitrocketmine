@@ -13,8 +13,8 @@ const HeroCta = () => {
             <p>
               We value your privacy. By clicking 'Create Account', you confirm
               that you have read and accepted our Privacy Policy and you
-              understand that you are creating an account under our Roketmine
-              Global Limited regulated by the SCB, (SIA-F220).
+              understand that you are creating an account under our Bit rocket
+              mine Global Limited regulated by the SCB, (SIA-F220).
             </p>
             <Link
               href="/auth/sign-up"

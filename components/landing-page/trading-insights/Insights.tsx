@@ -35,7 +35,8 @@ const Insights = () => {
             </h4>
             <p>
               Gain access to trading insight and live streams from professional
-              guest traders in the Roketmine Trade Zone. Put theory to practice.
+              guest traders in the Bit rocket mine Trade Zone. Put theory to
+              practice.
             </p>
             <div>
               <Link

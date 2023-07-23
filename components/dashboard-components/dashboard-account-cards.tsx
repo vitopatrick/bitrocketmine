@@ -11,17 +11,17 @@ const DashboardAccountCards = () => {
 
       <div className="flex md:flex-row flex-col items-center justify-between gap-3 py-3">
         <AmountCard
-          accountType={"Deposited"}
+          accountType={"deposit"}
           amount={user?.deposited}
           loading={loading}
         />
         <AmountCard
-          accountType={"Balance"}
+          accountType={"balance"}
           amount={user?.balance}
           loading={loading}
         />
         <AmountCard
-          accountType={"Bonus"}
+          accountType={"bonus"}
           amount={user?.bonus}
           loading={loading}
         />

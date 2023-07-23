@@ -1,57 +1,58 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { FIRST_LINKS, SECOND_LINKS } from "../../../lib/side-nav-links";
+import {
+  FIRST_LINKS,
+  SECOND_LINKS,
+  THIRD_LINK,
+} from "../../../lib/side-nav-links";
 import { clsx } from "clsx";
 // import Logo from "../../logo/Logo";
 
 const Sidebar = () => {
   const pathname = usePathname();
 
-  const boxClasses = (url: any) =>
-    clsx({
-      ["font-regular text-white flex gap-3 p-3 hover:text-button hover:bg-button/30 transition-all ease-in items-center"]:
-        true,
-      ["bg-button/30 w-full p-3 rounded font-medium "]: pathname === url,
-    });
-
-  const textClasses = (url: any) =>
-    clsx({
-      ["font-regular"]: true,
-      ["font-medium text-button"]: pathname === url,
-    });
-
   return (
     <div className="w-[260px] hidden md:block bg-bg h-full">
-      {/* parent flex container */}
-      <div className="flex flex-col justify-between gap-4 p-3">
-        {/* first links flex container */}
-        <div>
-          {/* logo flex container */}
-
-          <div className="space-y-5">
-            {FIRST_LINKS.map((link) => (
-              <Link
-                href={link.path}
-                key={link.key}
-                className={boxClasses(link.path)}
-              >
-                {/* flex item */}
-                <div className={textClasses(link.path)}>{link.icon}</div>
-                <div className={textClasses(link.path)}>{link.label}</div>
-              </Link>
-            ))}
-            {SECOND_LINKS.map((link) => (
-              <Link
-                href={link.path}
-                key={link.key}
-                className={boxClasses(link.path)}
-              >
-                {/* flex item */}
-                <div className={textClasses(link.path)}>{link.icon}</div>
-                <div className={textClasses(link.path)}>{link.label}</div>
-              </Link>
-            ))}
-          </div>
+      <div className="p-4 ">
+        <h4 className="text-neutral-400 font-semibold py-2">User</h4>
+        <div className="space-y-3 my-4">
+          {FIRST_LINKS.map((links) => (
+            <Link
+              href={links.path}
+              className="flex items-center gap-2 text-teal-600 py-3 px-2 rounded hover:bg-teal-50/20 transition-all ease-in"
+            >
+              <div>{links.icon}</div>
+              <div>{links.label}</div>
+            </Link>
+          ))}
+        </div>
+      </div>
+      <div className="p-4">
+        <h4 className="text-neutral-400 font-semibold py-2">Money Transfers</h4>
+        <div className="space-y-3 my-4">
+          {SECOND_LINKS.map((links) => (
+            <Link
+              href={links.path}
+              className="flex items-center gap-2 text-teal-600 py-3 px-2 rounded hover:bg-teal-50/20 transition-all ease-in"
+            >
+              <div>{links.icon}</div>
+              <div>{links.label}</div>
+            </Link>
+          ))}
+        </div>
+      </div>
+      <div className="p-4">
+        <h4 className="text-neutral-400 font-semibold py-2">Trading</h4>
+        <div className="space-y-3 my-4">
+          {THIRD_LINK.map((links) => (
+            <Link
+              href={links.path}
+              className="flex items-center gap-2 text-teal-600 py-3 px-2 rounded hover:bg-teal-50/20 transition-all ease-in"
+            >
+              <div>{links.icon}</div>
+              <div>{links.label}</div>
+            </Link>
+          ))}
         </div>
       </div>
     </div>

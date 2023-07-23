@@ -3,7 +3,7 @@ import { RxDashboard } from "react-icons/rx";
 import { CgProfile } from "react-icons/cg";
 import { AiFillMoneyCollect, AiOutlineBank } from "react-icons/ai";
 import { SiMarketo } from "react-icons/si";
-import { MdMoney } from "react-icons/md";
+import { MdMoney, MdTransform } from "react-icons/md";
 
 export const FIRST_LINKS = [
   {
@@ -33,6 +33,9 @@ export const SECOND_LINKS = [
     path: "/withdraw",
     icon: <AiFillMoneyCollect />,
   },
+];
+
+export const THIRD_LINK = [
   {
     key: "market",
     label: "Market",
@@ -45,11 +48,11 @@ export const SECOND_LINKS = [
     path: "/invest",
     icon: <MdMoney />,
   },
-  // {
-  //   key: "referral",
-  //   label: "Referral",
-  //   path: "/referral",
-  //   icon: <FaHandshakeAltSlash />,
-  // },
+  {
+    key: "p2p",
+    label: "P2P trading",
+    path: "/peer-to-peer",
+    icon: <MdTransform />,
+  },
 ];
 

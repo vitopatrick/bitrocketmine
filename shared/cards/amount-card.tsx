@@ -8,10 +8,20 @@ interface AmountCardType {
 
 const AmountCard = ({ accountType, amount, loading }: AmountCardType) => {
   return (
-    <div className="bg-bg font-main text-white rounded font-sec w-full p-3">
+    <div
+      className={
+        accountType == "deposit"
+          ? "bg-bg font-main text-white rounded font-sec w-full p-3 border-t-2 border-yellow-500"
+          : accountType == "balance"
+          ? "bg-bg font-main text-white rounded font-sec w-full p-3 border-t-2 border-purple-500"
+          : "bg-bg font-main text-white rounded font-sec w-full p-3 border-t-2 border-teal-500"
+      }
+    >
       <div className="flex flex-col gap-3">
         <div>
-          <h1 className="font-semibold">{accountType}</h1>
+          <h1 className="font-semibold capitalize text-neutral-400">
+            {accountType}
+          </h1>
         </div>
         <div>
           {loading && <SkeletonText height={10} width={200} />}

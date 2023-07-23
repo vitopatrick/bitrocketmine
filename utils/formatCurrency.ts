@@ -7,6 +7,7 @@ export const formatCurrency = (price: number = 0) => {
     style: "currency",
     notation: "standard",
     maximumFractionDigits: 0,
+    maximumSignificantDigits: 3,
   }).format(price);
    
 };
