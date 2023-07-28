@@ -128,7 +128,7 @@ const StakingModal = ({ visible, setVisible }: ModalProps) => {
         }
       >
         {/* main div that will be center */}
-        <div className="w-[80%] md:w-[40%] mx-auto relative my-12 bg-bg font-main text-white rounded-md shadow-md p-4">
+        <div className="w-[80%] md:w-[40%] mx-auto relative my-12 bg-bg font-mainrounded-md shadow-md p-4">
           <div className="absolute top-0 right-0 p-2">
             <FaTimes onClick={() => setVisible(false)} />
           </div>
@@ -152,7 +152,7 @@ const StakingModal = ({ visible, setVisible }: ModalProps) => {
                   id="amount"
                   value={amount}
                   onChange={(e) => setAmount(e.target.value)}
-                  className="w-full bg-transparent text-bg outline-none px-2"
+                  className="w-full bg-transparent  outline-none px-2"
                 />
               </div>
             </div>
@@ -181,7 +181,7 @@ const StakingModal = ({ visible, setVisible }: ModalProps) => {
             </div>
             <button
               onClick={updateStakingPlan}
-              className="mt-4 inline-block w-full font-sec bg-card text-white py-2 rounded"
+              className="mt-4 inline-block w-full font-sec bg-card py-2 rounded"
             >
               Invest Now
             </button>

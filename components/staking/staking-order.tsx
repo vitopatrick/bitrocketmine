@@ -5,7 +5,7 @@ import { useFetchStakes } from "./hook/useFetchStaking";
 const StakingOrder = () => {
   const { stakes } = useFetchStakes();
   return (
-    <section className="text-white font-main my-3">
+    <section className="font-main my-3">
       <div className="mx-2">
         <header>
           <h4 className="font-semibold text-2xl py-3">Investments</h4>

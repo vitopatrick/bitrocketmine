@@ -24,11 +24,11 @@ const Header = () => {
 
   return (
     <>
-      <div className="p-3 bg-bg text-white font-main">
+      <div className="p-3 font-main">
         {/* parent div */}
         <div className="flex justify-between items-center ">
           {/* flex item child */}
-          <div className="flex items-center w-[90%] text-2xl font-semibold font-sec text-paper py-2 capitalize">
+          <div className="flex  items-center w-[90%] text-2xl font-semibold font-sec text-paper py-2 capitalize">
             {header}
           </div>
           {/* icons div */}
@@ -38,7 +38,7 @@ const Header = () => {
               {!loading && (
                 <Link
                   href="/account-profile"
-                  className="uppercase text-bg font-semibold cursor-pointer text-xl font-sec bg-[#e9e9e9] p-2  items-center justify-center rounded-full w-[50px] h-[50px]"
+                  className="uppercase text-black font-semibold cursor-pointer text-xl font-sec bg-[#e9e9e9] p-3  items-center justify-center rounded-full w-[50px] h-[50px]"
                 >
                   {user?.Name?.slice(0, 2)}
                 </Link>

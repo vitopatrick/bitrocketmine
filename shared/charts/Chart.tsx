@@ -19,7 +19,7 @@ const Chart = () => {
   const { coin, loading } = useFetchAllCoin(selected, 30);
 
   return (
-    <div className="p-4 bg-bg text-white rounded flex-1 items-stretch">
+    <div className="p-4 bg-bg  rounded flex-1 items-stretch">
       {/* selector */}
       <div className="mb-8 flex items-center justify-between">
         <div className="bg-card py-1 px-2 rounded focus:border-paper focus:border-[1px]">
@@ -44,8 +44,8 @@ const Chart = () => {
             <AreaChart data={coin}>
               <defs>
                 <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="5%" stopColor="#059669" stopOpacity={0.7} />
-                  <stop offset="95%" stopColor="#059669" stopOpacity={0} />
+                  <stop offset="5%" stopColor="#312e81" />
+                  <stop offset="95%" stopColor="#312e81" stopOpacity={0.2} />
                 </linearGradient>
               </defs>
               <XAxis dataKey="date" tickCount={4} />
@@ -74,7 +74,7 @@ const Chart = () => {
 const CustomTooltip = ({ active, payload, label }: any) => {
   if (active && payload && payload.length) {
     return (
-      <div className="custom-tooltip text-white bg-bg font-main p-2 rounded">
+      <div className="custom-tooltip  bg-card font-main p-2 rounded">
         <p className="label">on {label}</p>
         <p className="desc font-bold">{`Price was ${formatCurrency(
           payload[0].value

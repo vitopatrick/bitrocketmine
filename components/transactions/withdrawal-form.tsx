@@ -76,7 +76,7 @@ const WithdrawalForm = () => {
   };
 
   return (
-    <div className="mx-2 text-white font-main">
+    <div className="mx-2  font-main">
       <h3 className="font-sec py-3 text-lg md:text-xl font-semibold">
         Withdraw Here
       </h3>
@@ -91,14 +91,14 @@ const WithdrawalForm = () => {
             <label htmlFor="amount" className="font-sec py-2 text-sm">
               Enter Amount
             </label>
-            <div className="w-full bg-neutral-300 py-2 rounded">
+            <div className="w-full bg-indigo-200 py-2 rounded">
               <input
                 type="text"
                 name="amount"
                 id="amount"
                 value={amount}
                 onChange={(e) => setAmount(e.target.value)}
-                className="bg-transparent text-bg outline-none px-2"
+                className="bg-transparent outline-none px-2"
               />
             </div>
           </div>
@@ -110,14 +110,14 @@ const WithdrawalForm = () => {
             >
               Remarks
             </label>
-            <div className="w-full bg-neutral-300 py-2 rounded">
+            <div className="w-full bg-indigo-200 py-2 rounded">
               <input
                 type="text"
                 name="remarks"
                 id="remarks"
                 value={remarks}
                 onChange={(e) => setRemarks(e.target.value)}
-                className="bg-transparent text-bg outline-none px-2"
+                className="bg-transparent  outline-none px-2"
               />
             </div>
           </div>
@@ -130,11 +130,11 @@ const WithdrawalForm = () => {
             >
               Select coin
             </label>
-            <div className="w-full bg-neutral-300 py-2 rounded">
+            <div className="w-full bg-indigo-200 py-2 rounded">
               <select
                 name="coin"
                 id="coin"
-                className="bg-transparent text-bg outline-none"
+                className="bg-transparent  outline-none"
                 value={selectedCoin}
                 onChange={(e) => setSelectedCoin(e.target.value)}
               >
@@ -152,21 +152,21 @@ const WithdrawalForm = () => {
             <label htmlFor="amount" className="font-sec py-2 text-sm">
               Enter address
             </label>
-            <div className="w-full bg-neutral-300 py-2 rounded">
+            <div className="w-full bg-indigo-200 py-2 rounded">
               <input
                 type="text"
                 name="address"
                 id="address"
                 value={address}
                 onChange={(e) => setAddress(e.target.value)}
-                className="bg-transparent text-bg outline-none px-2"
+                className="bg-transparent outline-none px-2"
               />
             </div>
           </div>
         </form>
         <div>
           <button
-            className=" my-5 px-4 py-3 rounded bg-bg"
+            className=" my-5 px-4 py-3 rounded  text-indigo-600 font-bold"
             onClick={() => setBankWithdrawalModal(true)}
           >
             Bank Withdrawal
@@ -174,7 +174,7 @@ const WithdrawalForm = () => {
         </div>
         <button
           onClick={sendWithdrawal}
-          className="bg-bg rounded px-3 py-2 font-sec mt-2 w-full md:w-fit"
+          className="bg-indigo-600 text-white font-bold rounded px-3 py-2 font-sec mt-2 w-full md:w-fit"
         >
           Send Request
         </button>

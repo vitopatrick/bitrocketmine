@@ -11,10 +11,10 @@ const AmountCard = ({ accountType, amount, loading }: AmountCardType) => {
     <div
       className={
         accountType == "deposit"
-          ? "bg-bg font-main text-white rounded font-sec w-full p-3 border-t-2 border-yellow-500"
+          ? "bg-card font-main rounded font-sec w-full p-3 border-t-2 border-yellow-500"
           : accountType == "balance"
-          ? "bg-bg font-main text-white rounded font-sec w-full p-3 border-t-2 border-purple-500"
-          : "bg-bg font-main text-white rounded font-sec w-full p-3 border-t-2 border-teal-500"
+          ? "bg-card font-main rounded font-sec w-full p-3 border-t-2 border-purple-500"
+          : "bg-card font-main rounded font-sec w-full p-3 border-t-2 border-teal-500"
       }
     >
       <div className="flex flex-col gap-3">
@@ -44,7 +44,7 @@ export const PlanCard = ({
   loading: false;
 }) => {
   return (
-    <div className="bg-bg font-main text-white rounded font-sec w-full p-3">
+    <div className="bg-card font-main rounded font-sec w-full p-3">
       <div className="flex flex-col gap-3">
         <div>
           <h1 className="font-semibold">{accountType}</h1>

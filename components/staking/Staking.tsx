@@ -13,7 +13,7 @@ const Staking = () => {
         {stakingOptions.map((opt) => (
           <div
             key={opt.id}
-            className="bg-bg p-4 font-main text-white rounded shadow my-4 md:my-0"
+            className="bg-bg p-4 font-main rounded shadow my-4 md:my-0"
           >
             {/* header (name and apr) */}
             <div className="flex items-baseline gap-3 mb-4">
@@ -36,7 +36,7 @@ const Staking = () => {
             </div>
             <button
               onClick={() => setVisible(true)}
-              className="mt-4 mb-2 capitalize font-sec inline-block bg-card py-1 rounded text-white  w-full hover:bg-bg"
+              className="mt-4 mb-2 capitalize font-sec inline-block bg-indigo-600 text-white font-bold py-1 rounded  w-full hover:bg-bg"
             >
               invest
             </button>

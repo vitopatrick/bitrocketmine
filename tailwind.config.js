@@ -16,8 +16,8 @@ module.exports = {
         variable: "satoshi-variable",
       },
       colors: {
-        bg: "#0c0a09",
-        card: "#18181b",
+        bg: "#f8fafc",
+        card: "#f3f4f6",
         bgBoard: "#0b0e11",
         button: "#059669",
       },

@@ -1,6 +1,14 @@
 export const stakingOptions = [
   {
     id: 1,
+    range: "$1,000 - $5,000",
+    apr: "50%",
+    duration: "30days",
+    name: "Bronze",
+    min: 5000,
+  },
+  {
+    id: 2,
     range: "$5,000 - $10,000",
     apr: "65%",
     duration: "30days",
@@ -8,7 +16,7 @@ export const stakingOptions = [
     min: 5000,
   },
   {
-    id: 2,
+    id: 3,
     range: "$10,000 - $100,000",
     apr: "70%",
     duration: "60days",
@@ -16,11 +24,27 @@ export const stakingOptions = [
     min: 10000,
   },
   {
-    id: 3,
+    id: 4,
     range: "$100,000 - $1,000,000",
     apr: "80%",
     duration: "120days",
     name: "Platinum",
     min: 100000,
+  },
+  {
+    id: 5,
+    range: "$1,000,000 - $10,000,000",
+    apr: "84%",
+    duration: "120days",
+    name: "Platinum Plus",
+    min: 1000000,
+  },
+  {
+    id: 6,
+    range: "$10,000,000 - $50,000,000",
+    apr: "87%",
+    duration: "120days",
+    name: "Platinum Extra",
+    min: 10000000,
   },
 ];

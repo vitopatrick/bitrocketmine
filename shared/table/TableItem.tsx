@@ -18,7 +18,7 @@ const TableItem = ({ name, price, change, img, symbol }: TableProps) => {
     });
 
   return (
-    <div className="grid grid-cols-3 md:grid-cols-5 bg-bg/60 text-white font-main mx-2 px-2">
+    <div className="grid grid-cols-3 md:grid-cols-5 bg-bg/60 font-main mx-2 px-2">
       <div className=" py-3 col-span-2 flex gap-4 items-center">
         <div className="w-[12%] md:w-[6%]">
           <img src={img} alt={name} />

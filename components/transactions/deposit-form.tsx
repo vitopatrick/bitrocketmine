@@ -104,7 +104,7 @@ const DepositForm = () => {
         {/* barcode image */}
         {!selectedCoin && <div />}
         {selectedCoin && (
-          <div className="my-2 space-y-4 text-white font-regular">
+          <div className="my-2 space-y-4 font-regular">
             <motion.div
               variants={variants}
               key={coin}
@@ -120,7 +120,7 @@ const DepositForm = () => {
               initial="start"
               animate="end"
               exit="exit"
-              className="w-full md:w-[50%] mx-auto bg-bg rounded py-4 px-2 space-y-3 mt-3"
+              className="w-full md:w-[50%] mx-auto bg-indigo-200 rounded py-4 px-2 space-y-3 mt-3"
             >
               <h3 className="font-bold">{selectedCoin.address}</h3>
             </motion.div>
@@ -129,7 +129,7 @@ const DepositForm = () => {
               initial="start"
               animate="end"
               exit="exit"
-              className="w-full md:w-[50%] mx-auto my-4 bg-bg space-y-4 rounded p-2"
+              className="w-full md:w-[50%] mx-auto my-4 bg-indigo-200 space-y-4 rounded p-2"
             >
               <p className="text-sm text-neutral-400 ">Network</p>
               <h3 className="font-medium">{selectedCoin.name}</h3>
@@ -137,7 +137,7 @@ const DepositForm = () => {
           </div>
         )}
         {/* form */}
-        <div className="text-white font-main">
+        <div className=" font-main">
           {/* header */}
           <div>
             <h4 className="font-medium py-2 capitalize text-lg text-center underline">
@@ -152,11 +152,11 @@ const DepositForm = () => {
                 <label htmlFor="coin" className="text-sm">
                   Choose Currency
                 </label>
-                <div className="w-full bg-neutral-300 py-2 rounded">
+                <div className="w-full bg-indigo-200 py-2 rounded">
                   <select
                     name="coin"
                     id="coin"
-                    className="bg-transparent w-full text-bg outline-none"
+                    className="bg-transparent w-full  outline-none"
                     value={coin}
                     onChange={(e) => setCoin(e.target.value)}
                   >
@@ -173,14 +173,14 @@ const DepositForm = () => {
                 <label htmlFor="amount" className="text-sm">
                   Enter Amount to deposit
                 </label>
-                <div className="w-full bg-neutral-300 py-2 rounded">
+                <div className="w-full bg-indigo-200 py-2 rounded">
                   <input
                     type="text"
                     name="amount"
                     id="amount"
                     value={amount}
                     onChange={(e) => setAmount(e.target.value)}
-                    className="bg-transparent w-full outline-none text-bg px-2"
+                    className="bg-transparent w-full outline-none  px-2"
                   />
                 </div>
               </div>
@@ -188,7 +188,7 @@ const DepositForm = () => {
             </form>
             <button
               onClick={depositCoin}
-              className="bg-bg py-2 rounded px-3 shadow w-full md:w-fit my-2"
+              className="bg-indigo-600 text-white py-2 rounded px-3 shadow w-full md:w-fit my-2"
             >
               Deposit
             </button>

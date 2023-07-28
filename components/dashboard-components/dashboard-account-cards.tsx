@@ -5,7 +5,7 @@ const DashboardAccountCards = () => {
   const { userState: user, loading }: any = useFetchUser();
   return (
     <section>
-      <div className="py-3 px-1 font-main text-white font-semibold text-xl">
+      <div className="py-3 px-1 font-main font-semibold text-xl">
         Account Summary
       </div>
 

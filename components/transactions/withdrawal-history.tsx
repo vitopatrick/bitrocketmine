@@ -16,7 +16,7 @@ const WithdrawalHistory = () => {
   } = useTransactions("/withdraw");
 
   return (
-    <div className="mb-6 text-white font-main">
+    <div className="mb-6  font-main">
       <div>
         <h3 className="font-sec font-bold text-paper py-2 mx-2 text-xl hover:underline cursor-pointer">
           Withdrawal History

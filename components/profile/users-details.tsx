@@ -19,7 +19,7 @@ const UsersDetails = ({
   return (
     <>
       {/* parent grid container */}
-      <div className="md:w-[60%] mx-auto md:grid-cols-3 gap-4 px-2 text-white">
+      <div className="md:w-[60%] mx-auto md:grid-cols-3 gap-4 px-2 ">
         {/* grid children */}
         <div className="my-2 p-4 flex items-center gap-6 bg-bg rounded shadow">
           {loading && <SkeletonCircle width={50} height={50} />}

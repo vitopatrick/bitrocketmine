@@ -2,9 +2,8 @@ import React from "react";
 import { formatCurrency } from "../../utils/formatCurrency";
 
 const Transaction = ({ trade }: unknown | any) => {
-  console.log(trade);
   return (
-    <div className="text-white my-4 bg-neutral-800/50 p-3 flex items-center justify-between">
+    <div className=" my-4 bg-card p-3 flex items-center justify-between">
       <div className="space-y-2">
         <h4 className="font-semibold text-xl">{trade.traderName}</h4>
         {trade.tradeType == "buy" ? (
