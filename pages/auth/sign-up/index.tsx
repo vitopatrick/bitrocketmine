@@ -14,7 +14,7 @@ const SignUp = () => {
         {/* parent div container */}
         <div className="flex justify-between h-screen relative">
           {/* CTA Markups */}
-          <div className="flex-1 p-6 text-white bg-bg hidden md:flex flex-col justify-center items-start font-semibold font-main">
+          <div className="flex-1 p-6 text-white bg-indigo-500 hidden md:flex flex-col justify-center items-start font-semibold font-main">
             <h1 className="text-2xl text-text_min">Still having doubts?</h1>
             <h4 className="text-6xl my-3 underline text-text_main">
               Get Started for Free

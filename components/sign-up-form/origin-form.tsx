@@ -85,16 +85,11 @@ const StepTwo = ({ move }: any) => {
         <form>
           {/* form header */}
           <div>
-            <h3 className="md:text-bg text-4xl font-bold text-white">
-              Complete Sign Up
-            </h3>
+            <h3 className=" text-4xl font-bold">Complete Sign Up</h3>
           </div>
           {/* Email or sub account */}
           <div className="flex flex-col mt-8">
-            <label
-              htmlFor="number"
-              className="md:text-sm text-white md:text-bg"
-            >
+            <label htmlFor="number" className="md:text-sm">
               Phone Number
             </label>
             <div>
@@ -111,14 +106,14 @@ const StepTwo = ({ move }: any) => {
           {/* sign up button */}
           <div className="flex justify-between items-center my-3">
             <button
-              className="font-main capitalize text-bg bg-neutral-300 rounded py-2 px-3  border border-card md:border-bg items-center"
+              className="font-main capitalize text-white bg-indigo-500 rounded py-2 px-3  border border-card md:border-bg items-center"
               onClick={() => move(false)}
             >
               go back
             </button>
             <button
               onClick={registerUser}
-              className="font-main bg-card md:bg-bg text-text_main text-white text-[1rem] rounded shadow py-2 px-3"
+              className="font-main bg-indigo-700 text-text_main text-white text-[1rem] rounded shadow py-2 px-3"
             >
               Create Account
             </button>

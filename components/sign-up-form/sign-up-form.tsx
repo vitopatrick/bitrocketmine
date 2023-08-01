@@ -32,16 +32,11 @@ const SignUpForm = ({ move }: any) => {
         <form>
           {/* form header */}
           <div>
-            <h3 className="text-white md:text-bg text-4xl font-main font-semibold">
-              Sign Up
-            </h3>
+            <h3 className=" text-4xl font-main font-semibold">Sign Up</h3>
           </div>
           {/* Email or sub account */}
           <div className="flex flex-col mt-4">
-            <label
-              htmlFor="name"
-              className="md:text-sm text-neutral-300 md:text-bg"
-            >
+            <label htmlFor="name" className="md:text-sm">
               Full Name
             </label>
             <div>
@@ -56,10 +51,7 @@ const SignUpForm = ({ move }: any) => {
             </div>
           </div>
           <div className="flex flex-col mt-4">
-            <label
-              htmlFor="email"
-              className="md:text-sm text-neutral-300 md:text-bg"
-            >
+            <label htmlFor="email" className="md:text-sm">
               Email/sub Account
             </label>
             <div>
@@ -75,10 +67,7 @@ const SignUpForm = ({ move }: any) => {
           </div>
           {/* password fieldset */}
           <div className="mt-4 flex flex-col">
-            <label
-              htmlFor="password"
-              className="md:text-sm text-neutral-300 md:text-bg"
-            >
+            <label htmlFor="password" className="md:text-sm">
               Password
             </label>
             <div className="flex items-center mt-3 bg-neutral-300 rounded">
@@ -103,7 +92,7 @@ const SignUpForm = ({ move }: any) => {
           {/* sign up button */}
           <button
             onClick={registerUsers}
-            className="font-main bg-card md:bg-bg text-text_main text-white text-[1rem] mt-8 rounded shadow shadow-bg inline-block w-full py-2"
+            className="font-main text-[1rem] mt-8 rounded shadow bg-indigo-500 text-white inline-block w-full py-2"
           >
             Next
           </button>

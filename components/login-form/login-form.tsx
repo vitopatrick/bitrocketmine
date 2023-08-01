@@ -75,13 +75,11 @@ const LoginForm = () => {
         <form>
           {/* form header */}
           <div>
-            <h3 className="md:text-bg text-4xl font-bold  text-white ">
-              Log In
-            </h3>
+            <h3 className="text-4xl font-bold">Log In</h3>
           </div>
           {/* Email or sub account */}
           <div className="flex flex-col mt-8">
-            <label htmlFor="email" className="text-sm md:text-bg text-white">
+            <label htmlFor="email" className="text-sm">
               Email/Sub-Account
             </label>
             <div>
@@ -97,7 +95,7 @@ const LoginForm = () => {
           </div>
           {/* password fieldset */}
           <div className="mt-4 flex flex-col">
-            <label htmlFor="password" className="text-sm md:text-bg text-white">
+            <label htmlFor="password" className="text-sm">
               Password
             </label>
             <div className="flex items-center mt-3 bg-neutral-300 py-2 rounded">
@@ -122,14 +120,14 @@ const LoginForm = () => {
           {/* login button */}
           <button
             onClick={loginUser}
-            className="font-main md:bg-bg bg-card text-white text-[1rem] mt-8 rounded shadow inline-block w-full py-2"
+            className="font-main bg-indigo-500 text-white text-[1rem] mt-8 rounded shadow inline-block w-full py-2"
           >
             Log in
           </button>
           <div className="flex justify-end my-4">
             <Link
               href="/auth/forgot-password"
-              className="justify-end text-sm font-main text-white md:text-bg"
+              className="justify-end text-sm font-main text-red-800"
             >
               forgot password
             </Link>
